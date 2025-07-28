@@ -11,7 +11,8 @@
       <div class="nav-bar"></div>
       <div class="cart">Cart({{ cart }})</div>
       <product-display :premium="premium"></product-display>
-      <product-display></product-display>
+      <product-details :details="details"></product-details>
+      <product-display :></product-display>
       <product-display></product-display>
     </div>
 
@@ -19,6 +20,7 @@
     <script src="./main.js"></script>
     <!-- Then Register Components -->
     <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ProductDetails.js"></script>
     <!-- Then Mount App -->
     <script>
       const mountedApp = app.mount('#app');
